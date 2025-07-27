@@ -1,0 +1,572 @@
+body{
+  background-image: url(fondoBodyPizza.jpeg);
+  margin: 0;
+  height: 4vh;
+  overflow-x: hidden;
+  animation: fondoVertical  50s ease-in-out infinite alternate ;
+ 
+}
+@keyframes fondoVertical  {
+  0%,100%{background-position: 100%X;}
+  50%{background-position:0%;}
+}
+.principio{
+  background-image: url(pizza1.jpg);
+  border-radius: 1em;
+  padding: 5px;
+  box-shadow: 3px 3px 4px black;
+  background-position: 200px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  animation: movimiento 6s infinite  ease-in-out;
+    }
+    @keyframes movimiento {
+      0%,100%{background-position: -40px;}
+      50%{background-position: 40px;}
+       }
+   
+.titulo{
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 20px ;
+  text-shadow: 2px 2px 4px black;
+  animation: cambiocolor 3s ease-in-out infinite alternate,
+            movimiento2 2s ease-in-out forwards;
+}
+@keyframes cambiocolor {
+  0%{color: white;}
+  100%{color: rgb(238, 197, 16) ;}
+  
+}
+@keyframes movimiento2 {
+  0%{opacity: 0;
+     transform: translateX(-270px);}
+  
+}
+
+.subtitulo{
+  color: rgb(238, 197, 16);
+  text-align: center;
+  text-shadow: 3px 3px 5px rgb(0, 0, 0);
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  animation: cambiocolor2 3s ease-in-out infinite alternate,
+             movimiento3 3s ease-in-out forwards;
+}
+@keyframes cambiocolor2 {
+  0%{color: rgb(238, 197, 16);}
+  100%{color: rgb(255, 255, 255);}
+}
+@keyframes movimiento3 {
+  0%{opacity: 0;
+     transform: scale(2) ;}
+  
+}
+.ofrecer{
+  color: rgba(163, 37, 37, 0.904);
+  text-align: center;
+  text-shadow: 2px 1px 3px black;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+.pizzaP{
+  color: beige;
+  text-align: center;
+  text-shadow: 1px 1px 2px black;
+ 
+}
+.imagen{
+  position: absolute;
+  top: 14rem;
+  left: -3em;
+  background-color: rgb(241, 192, 85);
+  padding: 20px;
+  margin-left: 40px;
+  box-shadow: 3px 3px 3px 5px black;
+}
+.infopizzaP{
+ color: rgb(255, 255, 255);
+  position: absolute;
+  top:230px;
+  left: 12rem;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 10px;
+  text-shadow: 1px 2px 4px rgb(0, 0, 0);
+}
+.precios{
+  color: red;
+  position: absolute;
+  top: 290px;
+  left: 18rem ;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 1rem;
+  text-shadow: 1px 2px 4px black;
+}
+.precio{
+  color: #000000;
+  position: absolute;
+  top: 290px;
+  left: 13rem ;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 1rem;
+  text-shadow: 1px 1px 4px black;
+}
+.btn {
+  display: inline-block;
+  padding: 0.75em 3em;
+  background: linear-gradient(135deg, #ebae08, #ff7e05);
+  color: white;
+  text-decoration: none;
+  text-shadow: 1px 1px 2px black;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  border-radius: 8px;
+  position: absolute;
+  top: 345px;
+  left: 12.8rem ;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  animation: cambiarcolors 1s infinite ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+@keyframes cambiarcolors { 
+  0%{ background:rgb(236, 15, 15);}
+  100%{background-color: rgb(245, 22, 22);}
+  
+}
+
+
+.imagen2{
+  position: absolute;
+  top: 32rem;
+  left: -3em;
+  background-color: rgb(241, 192, 85);
+  padding: 10px;
+  margin-left: 50px;
+  width: 340px;
+  display: inline-block;
+  vertical-align: middle;
+  display: flex;
+  box-shadow: 3px 3px 3px 5px black;
+}
+
+.pizzaM{
+  color:beige;
+  position: absolute;
+  top: 28rem;
+  left: 6rem;
+  text-shadow: 1px 1px 2px black;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 16px ;
+}
+.infoPizzaM{
+  color: white;
+  position:absolute;
+  top: 32rem;
+  left: 12rem;
+  text-shadow: 1px 1px 2px black;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 10px ;
+}
+.precios2{
+  color: red;
+  position: absolute;
+ top: 38rem;
+ left: 17.5rem ;
+ text-shadow: 1px 1px 2px black;
+ font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 1rem;
+}
+.precio2{
+  color: #000000;
+  position: absolute;
+  top: 38rem;
+  left: 12.3rem ;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 1.6rem;
+  text-shadow: 1px 1px 4px black;
+}
+.btn2 {
+  display: inline-block;
+  padding: 0.75em 3em;
+  background: linear-gradient(135deg, #ebae08, #ff7e05);
+  color: white;
+  text-decoration: none;
+  text-shadow: 1px 1px 2px black;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  border-radius: 8px;
+  position: absolute;
+  top: 41.4rem;
+  left: 12.4rem ;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  animation: cambiarcolors 1s infinite ease-in-out;
+}
+
+.btn2:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+@keyframes cambiarcolors { 
+  0%{ background:rgb(236, 15, 15);}
+  100%{background-color: rgb(245, 22, 22);}
+  
+}
+.regalo{
+  text-align: center;
+  color: rgb(233, 124, 0);
+  position: fixed;
+  margin-top: 11rem;
+  background-color: rgb(216, 201, 132);
+  border-radius: 2rem;
+  padding: 5px;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: italic;
+  font-size: 8px;
+  text-shadow: 1px 1px 3px black;
+  position: absolute;
+  left: 1.7rem;
+  
+}
+.pizzaG{
+  color:beige ;
+  text-shadow: 1px 1px 3px black;
+  position: absolute;
+  top: 46rem;
+  left: 6rem;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 16px ;
+}
+.imagen3{
+  position: absolute;
+  top: 50.3rem;
+  left: -3em;
+  background-color: rgb(241, 192, 85);
+  padding: 10px;
+  margin-left: 50px;
+  width: 340px;
+  display: inline-block;
+  vertical-align: middle;
+  box-shadow: 3px 3px 3px 5px black;
+}
+footer {
+  background-color: #ff7e05;
+  position: absolute;
+  top: 10rem;
+  text-align: center;
+  color: beige;
+  text-shadow: 1px 1px 3px black;
+  font-family: "Playfair", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 1.5rem;
+  box-shadow: 10px 10px 10px 9px black;
+  bottom: 0
+    "wdth" 100;
+  animation: cambioCOLOR 2s infinite ease-in-out;
+}
+@keyframes cambioCOLOR {
+  0%{background: rgb(255, 0, 0);}
+  50%{background: rgb(255, 166, 0);}
+  100%{background-color:rgb(255, 166, 0) ;}
+  
+}
+.infoPizzaG{
+  color: white;
+  position:absolute;
+  top: 50rem;
+  left: 12rem;
+  text-shadow: 1px 1px 2px black;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 9.3px ;
+}
+.precios3{
+  color: rgb(255, 0, 0);
+  position: absolute;
+ top: 54.2rem;
+ left: 17.5rem ;
+ text-shadow: 1px 1px 2px black;
+ font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 1rem;
+}
+.precio3{
+  color: #000000af;
+  position: absolute;
+  top: 54.2rem;
+  left: 12.3rem ;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 1.6rem;
+  text-shadow: 1px 1px 4px black;
+}
+.btn3 {
+  display: inline-block;
+  padding: 0.75em 3em;
+  background: linear-gradient(135deg, #ebae08, #ff7e05);
+  color: white;
+  text-decoration: none;
+  text-shadow: 1px 1px 2px black;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  border-radius: 8px;
+  position: absolute;
+  top: 57.7rem;
+  left: 12.4rem ;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  animation: cambiarcolors 1s infinite ease-in-out;
+}
+
+.btn3:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(245, 0, 0, 0.3);
+}
+@keyframes cambiarcolors { 
+  0%{ background:rgb(236, 15, 15);}
+  100%{background-color: rgb(245, 22, 22);}
+  
+}
+.telegram{
+  position: absolute;
+  top: 105.4rem;
+  left: 0.4rem;
+  background-color: rgb(216, 167, 6);
+  padding: 8px 20px;
+  border-radius: 1rem;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 0.8rem;
+  text-shadow: 1px 1px 4px black; 
+  color: beige;
+}
+.telegram:hover {
+  background-color: #34e009;
+}
+.sin-subrayado{
+  text-decoration: none;
+}
+.instagram{
+  position: absolute;
+  top: 105.4rem;
+  left: 7.1rem;
+  background-color: rgb(216, 167, 6);
+  padding: 8px 20px;
+  border-radius: 1rem;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 0.8rem;
+  text-shadow: 1px 1px 4px black; 
+  color: beige;
+}
+.instagram:hover {
+  background-color: #34e009;
+}
+.sin-subrayado2{
+  text-decoration: none;
+}
+.WhatsApp{
+  position: absolute;
+  top: 105.4rem;
+  left: 14.5rem;
+  background-color: rgb(216, 167, 6);
+  padding: 8px 20px;
+  border-radius: 1rem;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 0.8rem;
+  text-shadow: 1px 1px 4px black; 
+  color: beige;
+}
+.WhatsApp:hover {
+  background-color: #34e009;
+}
+.sin-subrayado3{
+  text-decoration: none;
+}
+.nuestrasRedes{
+  position: absolute;
+  top: 98.7rem;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 20px;
+  text-align: center;
+  text-shadow: 1px 1px 4px rgb(243, 69, 16); 
+  color: rgb(0, 0, 0);
+}
+.btn4{
+  display: inline-block;
+  padding: 0.5em 1em;
+  background: linear-gradient(230deg, #eb1008, #ff7e05);
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-shadow: 1px 1px 1px  black;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 20px;
+  color: #f7dfab;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 8px;
+  position: absolute;
+  top: 77rem;
+  left: 6rem;
+  box-shadow: 1px 1px 1px 1px #000000;
+  animation: pulse 2s infinite, 
+             colorCambios 10s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+@keyframes colorCambios {
+  0%{background:  linear-gradient(230deg, #eb1008, #ff7e05);}
+  100%{background: rgb(4, 105, 112);}
+}
+.Delivery2{
+  position: absolute;
+  top: 61rem;
+  color: beige;
+  text-shadow: 1px 1px 3px black;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 0.9rem;
+  text-align: center;
+}
+.formulario{
+  position: absolute;
+  top: 68.4rem;
+  left: 8rem;
+  text-shadow: 1px 1px 3px rgb(255, 255, 255);
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 1rem;/* */
+  color: rgb(0, 0, 0);
+  background-color: transparent ;
+  box-shadow: 1px 1px 5px 2px black;
+  border-radius: 10px;
+  padding: 10px;
+  animation: col 1s ease-in-out infinite, coloo 5s ease-in-out infinite;
+}
+
+@keyframes coloo {
+  0%{border-radius: 1rem ;}
+  50%{border-radius: 2rem ;}
+  100%{border-radius:1rem;}
+}
+@keyframes col {
+  0%{background-color: transparent;}
+  50%{background-color: #fafafa;}
+  100%{background-color: transparent;}
+}
+/*
+@keyframes prueba {  /* 20%{transform: rotate(20deg);}
+  0%{transform: rotate(0deg);}
+  50%{transform: rotate(280deg);}
+  70%{transform: rotate(380deg);}
+  100%{transform: rotate(0deg);}
+ 
+}
+*/
+.animation{
+  animation: entrada 2.6s ease-in-out forwards ;
+}
+@keyframes entrada {
+  0%{opacity: 0;}
+  50%{opacity: 50;}
+  100%{opacity: 100;}
+}
+/*
+good {
+  width: 50%;
+  position: absolute;
+  top: 89.4rem;
+  left: 5.5rem;
+  border-radius: 20px;
+  background-color: #000000;
+  padding: 4px;
+  background: linear-gradient(20deg, red, green);
+  animation: colol 1s ease-in-out infinite;
+}
+@keyframes colol {
+  0%{background: linear-gradient(-0deg), green, red;}
+  20%{background: linear-gradient(20deg, red,green);}
+  40%{background: linear-gradient(-40deg, green, red);}
+  60%{background: linear-gradient(-60deg, red, green);}
+  90%{background: linear-gradient(-90deg, green, red);}
+  100%{background: linear-gradient(100deg, red,  green);}
+}*/
